@@ -20,9 +20,9 @@
                 <a  href="index.html"><img  class="logo" src="img/logo.webp" alt="NuRealFood Logo" ></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a onclick="showContent('container-team')"   href="index.html">Perfil</a></li>
                 <li><a href="products.html">Productos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <button type="button" class="btn btn-outline-info">Information</button>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -48,7 +48,51 @@
             <h2>Sobre Nosotros</h2>
             <p>En NuRealFood, nos dedicamos a proporcionar alimentos saludables y deliciosos. Con ingredientes naturales y frescos, creamos productos que no solo saben bien, sino que también son buenos para ti.</p>
         </section>
+
+        <div class="container-team">
+            <p>Taraoz Lizandro</p>
+            <img src="./img/team/te1.jpg" alt="">
+            <p>Diablo Drogao</p>
+            <img src="./img/team/te2.jpg" alt="">
+            <p>Gordo ura</p>
+            <img src="./img/team/te3.jpg" alt="">
+            <p>dadadadada</p>
+            <img src="./img/team/te4.jpg" alt="">        
+        </div>
+
+        <div class="reservation">
+            <div class="reservations-section" >
+                <h2>RESERVATIONS</h2>
+                <p>Reservations are not mandatory, but are recommended for larger parties and special occasions.<br>
+                Please call us at - <a href="tel:+17865429654">786.542.9654</a> -</p>
+                <form action="submit">
+                    <div class="form">
+                        <label for="text">ingrese su nombre</label>
+                    <input class="text" type="text"  minlength="3" maxlength="15">
+
+                    <label for="text" aria-placeholder="">ingrese su apellido</label>
+                    <input class="text" type="text" minlength="3" maxlength="16">
+
+                    <label for="text" aria-placeholder="">ingrese su mail</label>
+                    <input class="text" type="text" required minlength="4" maxlength="20">
+
+                    <button type="submit">enviar</button>
+                    </div>
+                </form>
+        
+            </div>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.874358003842!2d-80.19346730000001!3d25.807718799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b1538f2fff69%3A0x2e12c2237105a109!2s3252%20Buena%20Vista%20Blvd%2C%20Miami%2C%20FL%2033137!5e0!3m2!1ses-419!2sus!4v1718128435053!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
+
+    
+
+
+    <!-- <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script> -->
     <footer>
         <p>&copy; 2024 NuRealFood. Todos los derechos reservados.</p>
     </footer>
