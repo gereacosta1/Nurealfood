@@ -1,0 +1,449 @@
+span{
+    color: #00CED1;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    width: 100%;
+}
+
+.w-100 {
+    width: 1174px;
+    height: 554px;
+}
+
+/* Estilos del cuerpo */
+body {
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+header {
+    color: #fff;
+}
+
+.fixed-top{
+    background-image: linear-gradient( to bottom,#043C44, #00CED1);
+}
+
+.video-header{
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: auto; 
+    display: block;
+    width: 100%;
+}
+
+.product-item{
+    background-color: #333;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.product-item:hover{
+    transform: scale(1.1);
+    box-shadow: -1px -1px 50px 21px rgba(178,246,247,1);
+    -moz-box-shadow: -1px -1px 50px -1px rgba(178,246,247,1);
+    -webkit-box-shadow: -1px -1px 50px -1px rgba(178,246,247,1);
+}
+
+.content{
+    display: none;
+}
+
+.btn{
+    font-size: 30px;
+    margin-top: 10px;
+    color: wheat;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.nav-links li{
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(255, 20%, 50%);
+    filter: drop-shadow(2px 5px 10px #ffffff);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(122, 20%, 50%);
+    filter: drop-shadow(2px 5px 10px #ffffff);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./img') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    text-align: center;
+    display: start;
+    background: rgb(0,56,57);
+    background: linear-gradient(180deg, rgba(0,56,57,1) 0%, rgba(1,75,76,1) 6%, rgba(0,206,209,1) 53%, rgba(187,245,246,1) 88%, rgba(255,255,255,1) 100%);
+    color: white;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    margin: 15px;
+    padding: 8px;
+    border: 2px solid #fff;
+    width: 250px;
+    height: auto;
+    background-color: #043C44;
+}
+
+.product-item img {
+    max-width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/* reservacion */
+.reservation{
+    margin-top: 5px;
+    
+}
+.reservations-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    width: 700px;
+}
+.reservations-section h2 {
+    font-size: 40px;
+    color: #043C44;
+    margin-bottom: 20px;
+    margin-left: 240px;
+}
+.reservations-section p {
+    font-size: 22px;
+    color: #666666;
+    margin-bottom: 20px;
+    margin-left: 240px;
+}
+.reservations-section a {
+    color: #2c5d2d;
+    text-decoration: none;
+    font-weight: bold;
+}
+.reservations-section a:hover {
+    text-decoration: underline;
+}
+
+/* formulario */
+.form{
+    max-width: 300px;
+    color: white;
+    background-color: #043C44;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    margin-left: 420px;
+}
+.container-team{
+    /* width: 100px;
+    height: 100px; */
+    text-align: center;
+    align-items: center;
+    align-self: flex-start;
+}
+.container-team h2{
+    color: #1cacae;
+    font-family: "Kanit", sans-serif;
+}
+.container-team img{
+    justify-content: space-evenly;
+    width: 150px;
+    border:4px solid #00CED1;
+    border-radius: 90px;
+
+}
+.conteiner-card{
+    display: flex;
+    padding: 39px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+.container-card img{
+    justify-content: space-between;
+    padding: 20px;
+}
+.container-name{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    justify-content: center;
+    /* background-color: #01b6b9; */
+    color: white;
+}
+.container-name p{
+    background-color: #00CED1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row > *{
+    padding-top: 20px;
+}
+
+/* mapa */
+.container-fluid{
+    max-width: 1000px;
+    background-color: rgb(243, 255, 255);
+    box-shadow:2px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: black;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.container-fluid-map{
+    align-items: center;
+    display: flex;
+    /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); */
+    width: 500px;
+    justify-content: center;
+    margin-left: 350px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    background: cover;
+    margin-bottom: 90px;
+    width: 1200px;
+    height: 458px;
+}
+.title-map{
+    display: flex;
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.linea{
+    width: 750px;
+    height: 100px;
+    background-color: #00CED1;
+    margin: 20px;
+}
+/* FOOTER */
+.footer{
+    background: rgb(0,56,57);
+    background: linear-gradient(0deg, rgba(0,56,57,1) 0%, rgba(1,75,76,1) 10%, rgba(0,206,209,1) 70%, rgba(187,245,246,1) 90%, rgba(255,255,255,1) 100%);
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+}
+footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+}
+.lista{
+    list-style: none;
+}
+.social-content{
+    padding-top: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.social-content a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.social-content i{
+    padding: 20px;
+    margin: 19px;
+}
+.social-elem{
+    color: white;
+    margin: 0 10px;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+.social-elem:hover{
+    color: #fff;
+}
+
+.elem{
+    padding: initial;
+    margin: 12px;
+
+}
+.elem:hover{
+    color: aqua;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.title{
+    color: #043C44;
+    cursor: pointer;
+    position: relative;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    left: 100px;
+    /* background-color: #1a899a; */
+    top: 100%;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    margin-left: -50px;
+} 
+
+/* Calendario */
+.input {
+    background-color: #043C44;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+    
+::-webkit-calendar-picker-indicator {
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.calendar{
+    color: white;
+    background-color: #043C44;
+}
+
+
+.products h2{
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    color: #006769;
+    justify-content: center;
+    align-items: center;
+    display: inline-block; /* Hace que el fondo blanco esté solo detrás del texto */
+    background-color: white; /* Fondo blanco detrás del texto */
+    padding: 0 10px;
+}
+
+
+.botones-separacion button{
+    color: white;
+    border-radius: 20px;
+    background-color: #005051;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+}
