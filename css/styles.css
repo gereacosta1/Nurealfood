@@ -11,7 +11,9 @@
 body {
     line-height: 1.6;
 }
-
+.text-hero{
+    margin: auto;
+}
 /* Header y navegación */
 header {
     color: #fff;
